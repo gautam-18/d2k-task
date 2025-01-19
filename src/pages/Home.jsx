@@ -24,7 +24,7 @@ function Home() {
   const navigate = useNavigate();
 
   function handleSelectPerson(person) {
-    navigate(`/user/${person.id}`, { state: { person } });
+    navigate(`/users/${person.id}`, { state: { person } });
   }
 
   const indexOfLastPerson = currentPage * itemsPerPage;
