@@ -98,7 +98,11 @@ function PersonList({ persons, onSelectPerson, setSortParam, sortParam }) {
             <td className="  text-left p-4">{person.age}</td>
             <td className="  text-left p-4">{person.email}</td>
             <td className="  p-4 text-left">
-              <a href={person.web} className="text-blue-500 hover:underline">
+              <a
+                href={person.web}
+                target="_blank"
+                className="text-blue-500 hover:underline"
+              >
                 {person.web}
               </a>
             </td>
